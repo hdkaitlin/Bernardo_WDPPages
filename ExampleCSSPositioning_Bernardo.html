@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initian-scale=1.0">
+        <meta name="keywords" content="HTML5, HTML 5, Semantics">
+        <title>CSS Position Example</title>
+        <!--filename:ExampleCSSPositioning_Bernardo.html-->
+        <style>
+            /*Basic Styling */
+            body {
+                font-family:Georgia, 'Times New Roman', Times, serif;
+                margin: 0;
+                padding: 20px;
+            }
+
+            .container {
+                width: 90%;
+                max-width: 800px;
+                margin: auto;
+            }
+
+            /*Static Position (Default)*/
+            .static-box {
+                position: static;
+                background: #29a7d9;
+                padding: 10px;
+                color: white;
+                margin-bottom: 10px;
+            }
+
+            /* Relative Position*/
+            .relative-box {
+                position: relative;
+                top: 20px;
+                left: 20px;
+                background: #027333;
+                padding: 10px;
+                color: white;
+            }
+
+            /* Absolute Position */
+            .absolute-box {
+                position: absolute;
+                top: 50px;
+                left: 50px;
+                background: #f2e527;
+                padding: 10px;
+                color: black;
+            }
+
+            /* Fixed Position */
+            .fixed-box {
+                position: fixed;
+                top: 0;
+                right: 0;
+                background: #0a5da6;
+                padding: 10px;
+                color: white;
+                width: 150px;
+                text-align: center;
+            }
+
+            /* Sticky Position */
+            .sticky-box {
+                position: sticky;
+                top: 0;
+                background: #222059;
+                padding: 10px;
+                color:white;
+            }
+
+            /* To demonstrate sticky effect */
+            .content {
+                height: 150vh;
+                background: #ddd;
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="static-box">Static Position (Default)</div>
+            <div class="relative-box">Relative Position (Moves Relative to Itself)</div>
+
+            <div class="sticky-box">Sticky Position (Stays visible when scrolling)</div>
+
+            <div class="content">
+                Scroll down to see the sticky header effect.
+                <div class="absolute-box">Absolute Position (Moves relatives to nearest positioned ancestor)</div>
+            </div>
+        </div>
+
+        <div class="fixed-box">Fixed Position (Always Visible)</div>
+    </body>
+</html>
+            
